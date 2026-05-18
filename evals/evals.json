@@ -1,0 +1,31 @@
+{
+  "skill": "wechat-publish-template",
+  "version": "0.1.0",
+  "cases": [
+    {
+      "name": "should-trigger-on-md-to-wechat",
+      "prompt": "把 ./draft.md 转成公众号",
+      "expected_skill_invoked": true
+    },
+    {
+      "name": "should-trigger-on-paste-and-排版",
+      "prompt": "我贴一段 markdown，帮我做成公众号排版：\n# 标题\n正文...",
+      "expected_skill_invoked": true
+    },
+    {
+      "name": "should-not-trigger-on-writing-advice",
+      "prompt": "公众号该怎么选题？",
+      "expected_skill_invoked": false
+    },
+    {
+      "name": "should-not-trigger-on-minimal-style",
+      "prompt": "把这篇转成极简风格的 HTML",
+      "expected_skill_invoked": false
+    },
+    {
+      "name": "should-not-trigger-on-reverse-conversion",
+      "prompt": "把这篇公众号文章转回 markdown",
+      "expected_skill_invoked": false
+    }
+  ]
+}

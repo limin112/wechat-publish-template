@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<title>个人技术风公众号模板</title>
+</head>
+<body style="margin:0;padding:0;background:#f5f5f5;font-family:-apple-system,'PingFang SC','Helvetica Neue',sans-serif;">
+
+<!--
+  ===========================================================================
+  公众号"个人技术风"模板（橙黑赛博朋克）
+  作者：Min Li
+  使用：每个 <section data-block="..."> 是一个可独立复用的"积木"。
+       拼一篇文章就是把这些 section 按顺序往下放。
+  约束：所有样式必须 inline；不要用 class；不要加 <script>。
+  色板：主橙 #FF5722 | 深黑 #0A0A0A | 浅灰 #F5F5F5 | 文字 #1A1A1A
+  ===========================================================================
+-->
+
+<section style="max-width:677px;margin:0 auto;background:#f5f5f5;padding:0;color:#1a1a1a;font-size:16px;line-height:1.75;">
+
+<!-- ========== BLOCK: 封面标题 cover ========== -->
+<section data-block="cover" style="background:#0a0a0a;padding:48px 24px 36px;color:#fff;position:relative;">
+  <section style="display:inline-block;background:#ff5722;color:#fff;font-size:11px;font-weight:bold;letter-spacing:2px;padding:4px 10px;margin-bottom:18px;">TECH · NOTES</section>
+  <h1 style="margin:0 0 8px;font-size:34px;font-weight:900;line-height:1.15;color:#fff;letter-spacing:1px;">
+    在这里写<br>
+    <span style="color:#ff5722;">主标题最多两行</span>
+  </h1>
+  <section style="margin-top:18px;display:inline-block;background:#1a1a1a;border-left:4px solid #ff5722;padding:8px 14px;color:#f5f5f5;font-size:14px;">
+    炸裂视觉 &nbsp;+&nbsp; 清晰结构 &nbsp;+&nbsp; 强表达
+  </section>
+</section>
+
+<!-- ========== BLOCK: 作者信息 meta ========== -->
+<section data-block="meta" style="background:#fff;padding:14px 24px;border-bottom:2px solid #ff5722;font-size:13px;color:#555;">
+  <span style="color:#0a0a0a;font-weight:bold;">Min Li</span>
+  <span style="color:#ccc;margin:0 10px;">/</span>
+  <span>技术随笔</span>
+  <span style="color:#ccc;margin:0 10px;">/</span>
+  <span>阅读 5 min</span>
+</section>
+
+<!-- ========== BLOCK: 导语 intro ========== -->
+<section data-block="intro" style="padding:28px 24px 8px;">
+  <section style="display:inline-block;background:#0a0a0a;color:#ff5722;font-weight:bold;font-size:13px;letter-spacing:2px;padding:6px 14px;margin-bottom:12px;">◎ 导 语</section>
+  <p style="margin:0;font-size:15px;line-height:1.85;color:#333;">
+    这里写一段开头钩子，1-3 句话讲清楚：这篇要解决谁的什么问题，读完会拿到什么。<strong style="color:#ff5722;">不要绕弯，不要假大空。</strong>
+  </p>
+</section>
+
+<!-- ========== BLOCK: 编号大标题 numbered-heading ========== -->
+<section data-block="numbered-heading" style="margin:36px 24px 16px;">
+  <table cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse;">
+    <tr>
+      <td style="background:#ff5722;color:#fff;font-size:32px;font-weight:900;padding:4px 16px;letter-spacing:2px;font-family:'Helvetica Neue',Arial,sans-serif;">01</td>
+      <td style="padding-left:14px;font-size:22px;font-weight:bold;color:#0a0a0a;white-space:nowrap;">
+        <span style="color:#ff5722;">/</span> 一级小节标题
+      </td>
+    </tr>
+  </table>
+  <section style="height:2px;background:#0a0a0a;margin-top:10px;width:100%;"></section>
+</section>
+
+<!-- ========== BLOCK: 正文段落 paragraph ========== -->
+<section data-block="paragraph" style="padding:0 24px;">
+  <p style="margin:0 0 16px;font-size:15px;line-height:1.85;color:#333;">
+    这是一段普通正文。公众号上 15px 是阅读最舒服的字号，行高 1.85 给文字呼吸。关键词用 <strong style="color:#ff5722;">橙色加粗</strong> 突出，但一段别超过 2 个，否则失焦。
+  </p>
+</section>
+
+<!-- ========== BLOCK: 重点结论 callout-key ========== -->
+<section data-block="callout-key" style="margin:18px 24px;">
+  <table cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse;width:100%;">
+    <tr>
+      <td style="background:#0a0a0a;color:#ff5722;font-weight:bold;font-size:13px;padding:10px 14px;white-space:nowrap;letter-spacing:1px;vertical-align:top;">⚡ 重点结论</td>
+      <td style="background:#fff;border:1px solid #0a0a0a;border-left:none;padding:12px 16px;font-size:14px;line-height:1.8;color:#1a1a1a;">
+        这里写一句你最想让读者带走的结论。能脱稿背出来的那种。
+      </td>
+    </tr>
+  </table>
+</section>
+
+<!-- ========== BLOCK: 代码块 code ========== -->
+<section data-block="code" style="margin:18px 24px;">
+  <section style="display:inline-block;background:#0a0a0a;color:#ff5722;font-weight:bold;font-size:13px;padding:6px 12px;letter-spacing:1px;margin-bottom:-1px;">&lt;/&gt; 代码块</section>
+  <section style="background:#0f0f10;border:1px solid #ff5722;padding:18px 16px;font-family:'SF Mono',Menlo,Consolas,monospace;font-size:13px;line-height:1.7;color:#e6e6e6;overflow-x:auto;">
+    <p style="margin:0;"><span style="color:#666;display:inline-block;width:24px;">01</span><span style="color:#ff8a65;">function</span> <span style="color:#ffd166;">createAwesome</span>() {</p>
+    <p style="margin:0;"><span style="color:#666;display:inline-block;width:24px;">02</span>&nbsp;&nbsp;<span style="color:#ff8a65;">const</span> idea = <span style="color:#9ae66e;">'清晰结构 + 强视觉 + 高价值'</span>;</p>
+    <p style="margin:0;"><span style="color:#666;display:inline-block;width:24px;">03</span>&nbsp;&nbsp;<span style="color:#ff8a65;">const</span> content = <span style="color:#ffd166;">deliver</span>(idea);</p>
+    <p style="margin:0;"><span style="color:#666;display:inline-block;width:24px;">04</span>&nbsp;&nbsp;<span style="color:#ff8a65;">return</span> <span style="color:#ffd166;">impact</span>(content);</p>
+    <p style="margin:0;"><span style="color:#666;display:inline-block;width:24px;">05</span>}</p>
+  </section>
+</section>
+
+<!-- ========== BLOCK: 引用块 quote ========== -->
+<section data-block="quote" style="margin:24px 24px;">
+  <section style="display:inline-block;background:#0a0a0a;color:#ff5722;font-weight:bold;font-size:13px;padding:6px 12px;letter-spacing:1px;margin-bottom:-1px;">❝ 引用块</section>
+  <section style="background:#fff;border:1px solid #0a0a0a;padding:20px 24px 16px;position:relative;">
+    <section style="font-size:38px;color:#ff5722;font-family:Georgia,serif;line-height:1;margin-bottom:6px;">"</section>
+    <p style="margin:0 0 6px;font-size:15px;line-height:1.85;color:#1a1a1a;font-style:italic;">
+      优秀的内容不是把复杂的东西讲得很难，而是把复杂的东西讲得很简单。
+    </p>
+    <p style="margin:0;text-align:right;font-size:13px;color:#888;">—— 出处 / 作者</p>
+  </section>
+</section>
+
+<!-- ========== BLOCK: 操作步骤 steps ========== -->
+<section data-block="steps" style="margin:24px 24px;">
+  <section style="display:inline-block;background:#0a0a0a;color:#ff5722;font-weight:bold;font-size:13px;padding:6px 12px;letter-spacing:1px;margin-bottom:8px;">▶ 操作步骤</section>
+  <table cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse;width:100%;">
+    <tr>
+      <td style="width:33%;background:#fff;border:1px solid #0a0a0a;padding:14px 12px;vertical-align:top;">
+        <section style="display:inline-block;width:24px;height:24px;background:#ff5722;color:#fff;font-weight:bold;text-align:center;line-height:24px;border-radius:50%;font-size:13px;margin-bottom:8px;">1</section>
+        <p style="margin:0 0 6px;font-size:14px;font-weight:bold;color:#0a0a0a;">明确目标</p>
+        <p style="margin:0;font-size:12px;color:#666;line-height:1.7;">先确定文章要解决什么问题，服务哪类读者。</p>
+      </td>
+      <td style="width:8px;"></td>
+      <td style="width:33%;background:#fff;border:1px solid #0a0a0a;padding:14px 12px;vertical-align:top;">
+        <section style="display:inline-block;width:24px;height:24px;background:#ff5722;color:#fff;font-weight:bold;text-align:center;line-height:24px;border-radius:50%;font-size:13px;margin-bottom:8px;">2</section>
+        <p style="margin:0 0 6px;font-size:14px;font-weight:bold;color:#0a0a0a;">搭建结构</p>
+        <p style="margin:0;font-size:12px;color:#666;line-height:1.7;">用清晰的模块组织内容，让逻辑一目了然。</p>
+      </td>
+      <td style="width:8px;"></td>
+      <td style="width:33%;background:#fff;border:1px solid #0a0a0a;padding:14px 12px;vertical-align:top;">
+        <section style="display:inline-block;width:24px;height:24px;background:#ff5722;color:#fff;font-weight:bold;text-align:center;line-height:24px;border-radius:50%;font-size:13px;margin-bottom:8px;">3</section>
+        <p style="margin:0 0 6px;font-size:14px;font-weight:bold;color:#0a0a0a;">强化表达</p>
+        <p style="margin:0;font-size:12px;color:#666;line-height:1.7;">用视觉与表达放大重点，让价值被快速感知。</p>
+      </td>
+    </tr>
+  </table>
+</section>
+
+<!-- ========== BLOCK: 配图区域 figure ========== -->
+<section data-block="figure" style="margin:24px 24px;">
+  <section style="display:inline-block;background:#0a0a0a;color:#ff5722;font-weight:bold;font-size:13px;padding:6px 12px;letter-spacing:1px;margin-bottom:8px;">▦ 配图区域</section>
+  <section style="border:2px solid #0a0a0a;padding:0;position:relative;background:#1a1a1a;">
+    <img src="" alt="在公众号编辑器里替换成上传后的图片 URL" style="display:block;width:100%;height:auto;"/>
+    <p style="margin:0;padding:10px 14px;background:#0a0a0a;color:#888;font-size:12px;text-align:center;">图注：一句话讲清楚这张图说什么</p>
+  </section>
+</section>
+
+<!-- ========== BLOCK: 编号大标题 02 ========== -->
+<section data-block="numbered-heading" style="margin:36px 24px 16px;">
+  <table cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse;">
+    <tr>
+      <td style="background:#ff5722;color:#fff;font-size:32px;font-weight:900;padding:4px 16px;letter-spacing:2px;font-family:'Helvetica Neue',Arial,sans-serif;">02</td>
+      <td style="padding-left:14px;font-size:22px;font-weight:bold;color:#0a0a0a;white-space:nowrap;">
+        <span style="color:#ff5722;">/</span> 下一个小节
+      </td>
+    </tr>
+  </table>
+  <section style="height:2px;background:#0a0a0a;margin-top:10px;width:100%;"></section>
+</section>
+
+<!-- ========== BLOCK: 清单 checklist ========== -->
+<section data-block="checklist" style="margin:18px 24px;">
+  <section style="background:#fff;border:1px solid #0a0a0a;padding:18px 20px;">
+    <table cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse;width:100%;">
+      <tr>
+        <td style="width:50%;padding:6px 0;font-size:14px;color:#1a1a1a;vertical-align:top;"><span style="color:#ff5722;font-weight:bold;">✔</span>&nbsp;&nbsp;技术教程与实战笔记</td>
+        <td style="width:50%;padding:6px 0;font-size:14px;color:#1a1a1a;vertical-align:top;"><span style="color:#ff5722;font-weight:bold;">✔</span>&nbsp;&nbsp;行业观察与趋势分析</td>
+      </tr>
+      <tr>
+        <td style="padding:6px 0;font-size:14px;color:#1a1a1a;vertical-align:top;"><span style="color:#ff5722;font-weight:bold;">✔</span>&nbsp;&nbsp;工具评测与效率提升</td>
+        <td style="padding:6px 0;font-size:14px;color:#1a1a1a;vertical-align:top;"><span style="color:#ff5722;font-weight:bold;">✔</span>&nbsp;&nbsp;项目复盘与踩坑记录</td>
+      </tr>
+      <tr>
+        <td style="padding:6px 0;font-size:14px;color:#1a1a1a;vertical-align:top;"><span style="color:#ff5722;font-weight:bold;">✔</span>&nbsp;&nbsp;个人成长与思维方法</td>
+        <td style="padding:6px 0;font-size:14px;color:#1a1a1a;vertical-align:top;"><span style="color:#ff5722;font-weight:bold;">✔</span>&nbsp;&nbsp;解决方案与最佳实践</td>
+      </tr>
+    </table>
+  </section>
+</section>
+
+<!-- ========== BLOCK: 总结 summary ========== -->
+<section data-block="summary" style="margin:24px 24px;">
+  <table cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse;width:100%;">
+    <tr>
+      <td style="background:#0a0a0a;color:#ff5722;font-weight:bold;font-size:13px;padding:10px 14px;white-space:nowrap;letter-spacing:1px;vertical-align:top;">★ 总 结</td>
+      <td style="background:#fff;border:1px solid #0a0a0a;border-left:none;padding:12px 16px;font-size:14px;line-height:1.8;color:#1a1a1a;">
+        一个好的模板，不只是好看，更要好用。希望这套模板能成为你稳定输出、持续成长的加速器。
+      </td>
+    </tr>
+  </table>
+</section>
+
+<!-- ========== BLOCK: 关注 CTA cta-follow ========== -->
+<section data-block="cta-follow" style="margin:32px 0 0;background:#0a0a0a;padding:24px;">
+  <table cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse;width:100%;">
+    <tr>
+      <td style="vertical-align:middle;">
+        <section style="display:inline-block;background:#ff5722;color:#fff;font-size:20px;font-weight:900;padding:8px 18px;letter-spacing:2px;margin-bottom:8px;">★ 关注我</section>
+        <p style="margin:6px 0 0;color:#fff;font-size:14px;">持续分享技术与创作 &nbsp;&gt;&gt;&gt;</p>
+      </td>
+      <td style="vertical-align:middle;text-align:right;width:90px;">
+        <section style="display:inline-block;width:80px;height:80px;background:#fff;color:#0a0a0a;font-size:10px;text-align:center;line-height:80px;">QR 占位</section>
+      </td>
+    </tr>
+  </table>
+</section>
+
+<!-- 底部留白 -->
+<section style="height:24px;background:#0a0a0a;"></section>
+
+</section>
+
+</body>
+</html>
