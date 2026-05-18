@@ -2,6 +2,8 @@
 
 把 Markdown 草稿一键转成可直接粘贴进微信公众号编辑器的 HTML，统一"个人技术风"视觉系统（橙黑赛博朋克：主橙 `#FF5722` + 深黑 `#0A0A0A` + 浅灰 `#F5F5F5`）。
 
+> **作者帖子** · 这个 skill 的来源和思路：<https://x.com/MinLiBuilds/status/2055980925452968351?s=20>
+
 这是一个 [Claude Code Skill](https://docs.claude.com/en/docs/agents-and-tools/agent-skills/overview)，由 Claude 在识别到合适意图时自动触发。
 
 > **说明**：本仓库只内置一种风格（橙黑赛博朋克），主要作为**教学示例**，演示"如何把一套公众号视觉规范封装成 Claude Code Skill"。欢迎 fork 后改色板、改 block 模板、改触发词，做出你自己的风格——`SKILL.md` + `assets/template.html` + `references/wechat-html-constraints.md` 就是改造入口。
