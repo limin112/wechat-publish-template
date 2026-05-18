@@ -4,6 +4,8 @@
 
 这是一个 [Claude Code Skill](https://docs.claude.com/en/docs/agents-and-tools/agent-skills/overview)，由 Claude 在识别到合适意图时自动触发。
 
+> **说明**：本仓库只内置一种风格（橙黑赛博朋克），主要作为**教学示例**，演示"如何把一套公众号视觉规范封装成 Claude Code Skill"。欢迎 fork 后改色板、改 block 模板、改触发词，做出你自己的风格——`SKILL.md` + `assets/template.html` + `references/wechat-html-constraints.md` 就是改造入口。
+
 ## 安装
 
 把仓库 clone 到 Claude 的 skills 目录：
@@ -40,7 +42,7 @@ git clone https://github.com/limin112/wechat-publish-template.git ~/.claude/skil
 - **正文文字**：`#1A1A1A`
 - **正文宽度**：`max-width: 677px`（公众号最佳值）
 
-风格固定，不接受其它配色或排版要求。如果要别的风格，请基于本仓库 fork 改色板。
+本仓库的 skill 只输出这一种风格——这是有意的约束，让 Claude 不会在"风格自由发挥"上浪费 token。想要别的风格，**fork 一份改色板和 block 模板**就行（见上方"说明"）。
 
 ## Markdown → block 映射
 
