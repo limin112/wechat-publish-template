@@ -1,0 +1,90 @@
+# wechat-publish-template
+
+把 Markdown 草稿一键转成可直接粘贴进微信公众号编辑器的 HTML，统一"个人技术风"视觉系统（橙黑赛博朋克：主橙 `#FF5722` + 深黑 `#0A0A0A` + 浅灰 `#F5F5F5`）。
+
+这是一个 [Claude Code Skill](https://docs.claude.com/en/docs/agents-and-tools/agent-skills/overview)，由 Claude 在识别到合适意图时自动触发。
+
+## 安装
+
+把仓库 clone 到 Claude 的 skills 目录：
+
+```bash
+git clone https://github.com/limin112/wechat-publish-template.git ~/.claude/skills/wechat-publish-template
+```
+
+或者只放在当前项目里：`./.claude/skills/wechat-publish-template`。
+
+下次启动 Claude Code 即生效。
+
+## 使用
+
+在 Claude Code 里说：
+
+- "把 `/path/to/draft.md` 转成公众号"
+- "套公众号模板 / 做公众号排版"
+- 直接贴一段 Markdown 然后说"做成公众号文章"
+
+产物：一个独立 HTML 文件（默认 `<原名>.wechat.html`），全 inline style，无 `<style>` / `<script>` / `class`。
+
+发布流程：
+
+1. 浏览器打开生成的 HTML
+2. `Cmd+A` 全选 → `Cmd+C` 复制
+3. 粘贴到公众号编辑器
+4. 图片需要在编辑器里重新上传（HTML 里只是占位）
+
+## 视觉风格
+
+- **主色**：`#FF5722`（橙）
+- **背景**：`#0A0A0A`（深黑） / `#F5F5F5`（浅灰）
+- **正文文字**：`#1A1A1A`
+- **正文宽度**：`max-width: 677px`（公众号最佳值）
+
+风格固定，不接受其它配色或排版要求。如果要别的风格，请基于本仓库 fork 改色板。
+
+## Markdown → block 映射
+
+| MD 模式 | 对应 block |
+| --- | --- |
+| 文档第一个 `#` 标题 | `cover`（封面） |
+| 标题后 1-3 句开场 | `intro`（导语） |
+| `##` 二级标题 | `numbered-heading`（自动编号 01/02/03） |
+| 普通段落 | `paragraph` |
+| `>` 引用 | `quote` |
+| 含"结论 / 重点"关键词的段落 | `callout-key`（重点卡片） |
+| ` ``` ` 代码块 | `code`（行号 + 深色） |
+| 1-3 步骤的数字列表 | `steps`（三列卡片） |
+| `![alt](url)` | `figure`（占位，需手动重传） |
+| `- [x]` 任务列表 | `checklist`（双列勾选） |
+| 文末"## 总结" | `summary` |
+| 文末关注引导 | `cta-follow`（黑底 CTA） |
+
+完整 block 标准写法见 `assets/template.html`。
+
+## 文件结构
+
+```
+.
+├── SKILL.md                              # skill 元数据 + 工作流（Claude 读这个）
+├── assets/
+│   └── template.html                     # 所有 block 的参考实现
+├── references/
+│   └── wechat-html-constraints.md        # 公众号编辑器 HTML 限制速查
+└── evals/
+    └── evals.json                        # skill-creator 评测用例
+```
+
+## 公众号 HTML 限制
+
+公众号编辑器对 HTML 有严格限制，本 skill 已规避：
+
+- 无 `<style>` 块、无外链 CSS、无 `class`（全 inline）
+- 无 JS、无伪元素（`::before` / `::after`）、无 `transform`
+- 图片必须用编辑器上传，外链会被剥
+- 链接会被剥成纯文本（除微信白名单外）
+
+详见 `references/wechat-html-constraints.md`。
+
+## License
+
+MIT
